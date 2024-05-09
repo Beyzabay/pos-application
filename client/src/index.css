@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Electrolize&display=swap');
+
+body {
+  margin: 0;
+    font-family: "Electrolize", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.search{
+  width: 59vw;
+}
+.search-input{
+height: 6vh;
+width: 45vw;
+border-radius: 39px !important;
+}
+.positionClass{
+  display:flex ;
+  flex-direction: column;
+}
