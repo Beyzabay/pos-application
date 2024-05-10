@@ -8,7 +8,6 @@ body {
   font-family: "Electrolize", sans-serif;
   font-weight: 400;
   font-style: normal;
-  overflow-y: hidden;
 }
 .header {
   display: flex;
