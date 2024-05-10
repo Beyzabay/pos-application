@@ -18,7 +18,7 @@ function Header() {
       <div className="search sm:flex md:flex lg:flex xl:flex mx-12">
         <Input
           className="search-input md:w-6/6 w-full"
-          placeholder="default size"
+          placeholder="Search"
           prefix={<SearchOutlined />}
         />
       </div>
