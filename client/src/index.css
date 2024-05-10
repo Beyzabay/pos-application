@@ -1,28 +1,62 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Electrolize&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Electrolize&display=swap");
 
 body {
   margin: 0;
-    font-family: "Electrolize", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Electrolize", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
-.header{
+.header {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.search{
-  width: 59vw;
+.search {
+  width: 54vw;
 }
-.search-input{
-height: 6vh;
-width: 45vw;
-border-radius: 39px !important;
+.search-input {
+  border-radius: 39px !important;
 }
-.positionClass{
-  display:flex ;
+.positionClass {
+  display: flex;
   flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 425px) {
+  .search {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .logo {
+    margin-right: 0px !important;
+  }
+  .shopping-icon-2 {
+    margin-left: 2em !important;
+  }
+}
+@media screen and (max-width: 375px) {
+  .positionClass {
+    font-size: smaller;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 412px) {
+  .boyd {
+    background-color: aqua;
+  }
+  .search {
+    width: 45vw;
+  }
+}
+@media screen and (max-width: 335px) {
+  .search {
+    width: 39vw;
+  }
+}
+@media screen and (max-width: 300px) {
+  .search {
+    width: 30vw;
+  }
 }
