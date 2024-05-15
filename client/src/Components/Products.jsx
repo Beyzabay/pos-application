@@ -3,7 +3,7 @@ import React from "react";
 function Products() {
   return (
     <div className="container">
-      <div className="flex gap-7 flex-wrap justify-between">
+      <div className="flex gap-7 flex-wrap md:justify-between justify-center">
         <div class="max-w-24 bg-white border border-gray-200 rounded-lg shadow">
           <a href="/">
             <img

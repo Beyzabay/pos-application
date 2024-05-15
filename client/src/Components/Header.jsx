@@ -22,7 +22,7 @@ function Header() {
           prefix={<SearchOutlined />}
         />
       </div>
-      <div className="menu-links justify-center md:gap-7 gap-1 md:static fixed bottom-0 md:w-auto w-screen md:bg-transparent bg-white justify-around md:border-t-0 border-t-2" style={{ display: "flex" }}>
+      <div className="menu-links justify-center z-50 md:gap-7 gap-1 md:static fixed bottom-0 md:w-auto w-screen md:bg-transparent bg-white justify-around md:border-t-0 border-t-2" style={{ display: "flex" }}>
         <div className="hover:text-[#40a9ff]">
           <a href="/" className="positionClass">
             <HomeOutlined className="md:text-2xl text-xl"/>

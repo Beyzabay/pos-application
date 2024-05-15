@@ -3,7 +3,7 @@ import React from "react";
 function Categories() {
   return (
     <div className="mb-5">
-      <ul className="flex flex-col gap-7">
+      <ul className="flex md:flex-col overflow-auto gap-7">
         <li className="categories-li hover:bg-pink-700 cursor-pointer">Tümü</li>
         <li className="categories-li hover:bg-pink-700 cursor-pointer">Yiyecek</li>
         <li className="categories-li hover:bg-pink-700 cursor-pointer">içecek</li>

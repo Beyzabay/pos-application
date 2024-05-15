@@ -32,7 +32,7 @@ function CardTotal() {
               className="m-1 bg-blue-600 text-white !rounded-full !w-5 h-5"
               icon={<PlusCircleOutlined />}
             />
-            <span className="mt-1">3</span>
+            <span className="mt-1 font-bold">3</span>
             <Button
               className="m-1 bg-blue-600 text-white !rounded-full !w-5 h-5"
               icon={<MinusCircleOutlined />}
@@ -60,7 +60,7 @@ function CardTotal() {
             Sipariş Oluştur
           </Button>
           <Button
-            className="m-1 bg-red-600 text-white"
+            className=" bg-red-600 text-white md:m-1 mb-8"
             icon={<ClearOutlined />}
           >
             Temizle

@@ -8,15 +8,15 @@ function App() {
   return(
     <>
         <Header/>
-        <div className="flex justify-between p-4 gap-7">
+        <div className="flex justify-between p-4 gap-7 md:flex-row flex-col">
         {/* We make 100vh-(header+categories height) for the correct scroll size. */}
         <div className="flex-4 categories overflow-auto max-h-[calc(100vh-107px)] min-w-[150px]">
             <Categories/>
           </div>
-          <div className="product flex-4">
+          <div className="product overflow-auto max-h-[calc(100vh-107px)]">
             <Products/>
           </div>
-          <div className="total flex-4 min-w-[200px] border md: -mr-4">
+          <div className="total min-w-[250px] border md: -mr-4">
             <CardTotal/>
           </div>
         </div>
