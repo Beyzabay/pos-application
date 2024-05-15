@@ -73,8 +73,3 @@ body {
 .categories::-webkit-scrollbar{
   display: none;
 }
-@media screen and (min-width: 767px) {
-  .results{
-    margin-top: 21rem;
-  }
-}
