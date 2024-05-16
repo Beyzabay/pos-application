@@ -1,27 +1,21 @@
 import "./App.css";
-import CardTotal from "./Components/CardTotal";
-import Categories from "./Components/Categories";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Home from "./Home";
+import ShoppingCard from "./ShoppingCard";
 import Header from "./Components/Header";
-import Products from "./Components/Products";
 
 function App() {
-  return(
-    <>
-        <Header/>
-        <div className="flex justify-between p-4 gap-7 md:flex-row flex-col">
-        {/* We make 100vh-(header+categories height) for the correct scroll size. */}
-        <div className="flex-4 categories overflow-auto max-h-[calc(100vh-107px)] min-w-[150px]">
-            <Categories/>
-          </div>
-          <div className="product overflow-auto max-h-[calc(100vh-107px)]">
-            <Products/>
-          </div>
-          <div className="total min-w-[250px] border md: -mr-4">
-            <CardTotal/>
-          </div>
-        </div>
-    </>
-  )
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/ShoppingCard" element={<ShoppingCard />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App;
