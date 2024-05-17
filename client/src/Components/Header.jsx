@@ -42,10 +42,10 @@ function Header() {
           </Badge>
         </div>
         <div className="hover:text-[#40a9ff] ">
-          <a href="/" className="positionClass">
+          <Link to={"/Bill"} className="positionClass">
             <CopyOutlined className="md:text-2xl text-xl" />
             <span className="md:text-xs text[10px]">Faturalar</span>
-          </a>
+          </Link>
         </div>
         <div className="hover:text-[#40a9ff] ">
           <a href="/" className="positionClass">

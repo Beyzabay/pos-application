@@ -2,7 +2,7 @@ import React from "react";
 import { Table } from "antd";
 import { Card } from "antd";
 import { Button } from "antd";
-import CreateBill from "./CreateBill";
+import CreateBill from "../Components/CreateBill";
 import { useState } from "react";
 
 function ShoppingCard() {
