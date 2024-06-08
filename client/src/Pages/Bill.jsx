@@ -64,7 +64,7 @@ function Bill() {
             <span>210₺</span>
           </div>
           <Button
-            className="w-full bg-blue-600 h-9 text-white"
+            type="primary" size="large" className="w-full"
             onClick={() => setIsModalOpen(true)}
           >
             Yazdır
