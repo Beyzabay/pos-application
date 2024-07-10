@@ -16,8 +16,9 @@ const BillDetails = ({ isModalOpen, setIsModalOpen }) => {
             <article>
               <div className="px-5">
                 <div className="text-5xl mb-10 font-bold">Logo</div>
-                <div className="flex flex-row gap-24">
-                  <div>
+                <div className="flex sm:flex-row flex-col sm:gap-24 gap-10">
+                 <div className="flex flex-row sm:gap-24 gap-10 justify-between">
+                 <div>
                     <p className="font-bold">Fatura Detayı</p>
                     <p>Belirtilmemiş</p>
                     <p>Random Street</p>
@@ -29,6 +30,8 @@ const BillDetails = ({ isModalOpen, setIsModalOpen }) => {
                     <p>Tesla Street</p>
                     <p>Frisco</p>
                   </div>
+                 </div>
+                  <div className="flex flex-row sm:gap-24 gap-10 justify-between">
                   <div className="flex flex-col">
                     <div>
                       <p className="font-bold">Fatura Numarası</p>
@@ -49,6 +52,7 @@ const BillDetails = ({ isModalOpen, setIsModalOpen }) => {
                       <p>0</p>
                     </div>
                   </div>
+                  </div>
                 </div>
               </div>
               <div>
@@ -59,16 +63,16 @@ const BillDetails = ({ isModalOpen, setIsModalOpen }) => {
                         <th scope="col" class="text-black px-6 py-3 font-thin">
                           Görsel
                         </th>
-                        <th scope="col" class="text-black px-6 py-3 font-thin">
+                        <th scope="col" class="text-black px-6 py-3 font-thin sm:table-cell hidden">
                           Başlık
                         </th>
-                        <th scope="col" class="text-black px-6 py-3 font-thin">
+                        <th scope="col" class="text-black px-6 py-3 font-thin sm:table-cell hidden">
                           Fiyat
                         </th>
-                        <th scope="col" class="text-black px-6 py-3 font-thin">
+                        <th scope="col" class="text-black px-6 py-3 font-thin sm:table-cell hidden">
                           Adet
                         </th>
-                        <th scope="col" class="text-black px-6 py-3 font-thin">
+                        <th scope="col" class="text-black px-6 py-3 font-thin sm:text-center text-end">
                           Toplam
                         </th>
                       </tr>
@@ -81,9 +85,9 @@ const BillDetails = ({ isModalOpen, setIsModalOpen }) => {
                             className="w-14 h-14 rounded"
                           />
                         </th>
-                        <td class="px-6 py-4">Şalgam</td>
-                        <td class="px-6 py-4">5₺</td>
-                        <td class="px-6 py-4">1 Adet</td>
+                        <td class="px-6 py-4 sm:table-cell hidden">Şalgam</td>
+                        <td class="px-6 py-4 sm:table-cell hidden">5₺</td>
+                        <td class="px-6 py-4 sm:table-cell hidden">1 Adet</td>
                         <td class="px-6 py-4 text-end">5.00 ₺</td>
                       </tr>
                       <tr class="bg-white border-b">
@@ -96,9 +100,9 @@ const BillDetails = ({ isModalOpen, setIsModalOpen }) => {
                             className="w-14 h-14 rounded"
                           />
                         </th>
-                        <td class="px-6 py-4">Soda</td>
-                        <td class="px-6 py-4">4 ₺</td>
-                        <td class="px-6 py-4">2 Adet</td>
+                        <td class="px-6 py-4 sm:table-cell hidden">Soda</td>
+                        <td class="px-6 py-4 sm:table-cell hidden">4 ₺</td>
+                        <td class="px-6 py-4 sm:table-cell hidden">2 Adet</td>
                         <td class="px-6 py-4 text-end">8.00 ₺</td>
                       </tr>
                       <tr class="bg-white border-b">
@@ -111,10 +115,10 @@ const BillDetails = ({ isModalOpen, setIsModalOpen }) => {
                             className="w-14 h-14 rounded"
                           />
                         </th>
-                        <td class="px-6 py-4">Adana Kebap</td>
-                        <td class="px-6 py-4">40 ₺</td>
-                        <td class="px-6 py-4">1 Adet</td>
-                        <td class="px-6 py-4 text-end">40.00 ₺</td>
+                        <td class="px-6 py-4 sm:table-cell hidden">Adana Kebap</td>
+                        <td class="px-6 py-4 sm:table-cell hidden">40 ₺</td>
+                        <td class="px-6 py-4 sm:table-cell hidden *">1 Adet</td>
+                        <td class="px-6 py-4 text-end ">40.00 ₺</td>
                       </tr>
                       <tr class="bg-white border-b">
                         <th
@@ -126,16 +130,17 @@ const BillDetails = ({ isModalOpen, setIsModalOpen }) => {
                             className="w-14 h-14 rounded"
                           />
                         </th>
-                        <td class="px-6 py-4">Lahmacun</td>
-                        <td class="px-6 py-4">12 ₺</td>
-                        <td class="px-6 py-4">1 Adet</td>
+                        <td class="px-6 py-4 sm:table-cell hidden">Lahmacun</td>
+                        <td class="px-6 py-4 sm:table-cell hidden">12 ₺</td>
+                        <td class="px-6 py-4 sm:table-cell hidden">1 Adet</td>
                         <td class="px-6 py-4 text-end">12.00 ₺</td>
                       </tr>
                     </tbody>
                     <tfoot>
+                      <div className="sm:contents flex flex-col w-40">
                       <tr>
                         <th
-                          className="text-right font-thin pt-3 pb-3"
+                          className="text-right font-thin p-4"
                           colSpan="4"
                           scope="row"
                         >
@@ -146,8 +151,8 @@ const BillDetails = ({ isModalOpen, setIsModalOpen }) => {
                         </th>
                       </tr>
                       <tr>
-                        <th
-                          className="text-right font-thin pb-3"
+                       <th
+                          className="text-right font-thin p-4"
                           colSpan="4"
                           scope="row"
                         >
@@ -160,9 +165,9 @@ const BillDetails = ({ isModalOpen, setIsModalOpen }) => {
                           +12.00₺
                         </th>
                       </tr>
-                      <tr className="border-b">
-                        <th
-                          className="text-right font-thin pb-3"
+                      <tr>
+                       <th
+                          className="text-right font-thin p-4"
                           colSpan="4"
                           scope="row"
                         >
@@ -172,9 +177,10 @@ const BillDetails = ({ isModalOpen, setIsModalOpen }) => {
                           77.00 ₺
                         </th>
                       </tr>
+                      </div>
                     </tfoot>
                   </table>
-                  <div className="flex flex-row pt-6 px-2 text-neutral-500">
+                  <div className="flex flex-row pt-6 px-2 text-neutral-500 border-t-2">
                     <p>
                     Ödeme koşulları 14 gündür. Paketlenmemiş Borçların Geç
                     Ödenmesi Yasası 0000'e göre, serbest çalışanların bu süreden
