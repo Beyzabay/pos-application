@@ -42,6 +42,7 @@ function ShoppingCard() {
   ];
   return (
     <div>
+    <h1 className="pt-5 font-bold text-3xl">Sepet</h1>
       <Table
         dataSource={dataSource}
         columns={columns}

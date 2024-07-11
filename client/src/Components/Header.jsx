@@ -41,29 +41,29 @@ function Header() {
             </Link>
           </Badge>
         </div>
-        <div className="hover:text-[#40a9ff] ">
+        <div className="hover:text-[#40a9ff]">
           <Link to={"/Bill"} className="positionClass">
             <CopyOutlined className="md:text-2xl text-xl" />
             <span className="md:text-xs text[10px]">Faturalar</span>
           </Link>
         </div>
-        <div className="hover:text-[#40a9ff] ">
-          <a href="/" className="positionClass">
+        <div className="hover:text-[#40a9ff]">
+          <Link to={"/Customers"} className="positionClass">
             <UserOutlined className="md:text-2xl text-xl" />
             <span className="md:text-xs text[10px]">Müşteriler</span>
-          </a>
+          </Link>
         </div>
-        <div className="hover:text-[#40a9ff] ">
-          <a href="/" className="positionClass">
-            <BarChartOutlined className="md:text-2xl text-xl" />
+        <div className="hover:text-[#40a9ff]">
+        <Link to={"/Statistics"} className="positionClass">
+        <BarChartOutlined className="md:text-2xl text-xl" />
             <span className="md:text-xs text[10px]">İstatistikler</span>
-          </a>
+          </Link>
         </div>
         <div className="hover:text-[#40a9ff] ">
-          <a href="/" className="positionClass">
+          <Link to={"/"} className="positionClass">
             <LogoutOutlined className="md:text-2xl text-xl" />
             <span className="md:text-xs text[10px]">Çıkış</span>
-          </a>
+          </Link>
         </div>
       </div>
       <div className="hover:text-[#40a9ff] shopping-icon-2 md:hidden flex">
